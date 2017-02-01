@@ -1,0 +1,25 @@
+/*
+ * graph.cpp
+ *
+ *  Created on: 31-Jan-2017
+ *      Author: sandeep
+ */
+
+#include<iostream>
+
+struct Edge{
+
+	int src;
+	int dst;
+};
+
+class Grpah{
+	int V,E;
+
+public:
+	Graph(int V, int E){
+		this->V = V
+	}
+};
+
+

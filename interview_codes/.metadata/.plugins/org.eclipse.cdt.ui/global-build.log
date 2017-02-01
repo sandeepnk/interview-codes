@@ -1,0 +1,310 @@
+23:51:23 **** Build of configuration Debug for project basic_cpp ****
+make all 
+Building file: ../class.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"class.d" -MT"class.d" -o "class.o" "../class.cpp"
+../class.cpp:10:7: error: expected nested-name-specifier before ‘namaspace’
+subdir.mk:18: recipe for target 'class.o' failed
+ using namaspace std;
+       ^
+../class.cpp:19:6: error: expected unqualified-id before ‘int’
+ Box::int area(){
+      ^
+../class.cpp: In function ‘int main()’:
+../class.cpp:29:2: error: ‘cout’ was not declared in this scope
+  cout<< "Area>>> "<< b1.area();
+  ^
+../class.cpp:29:2: note: suggested alternative:
+In file included from ../class.cpp:8:0:
+/usr/include/c++/5/iostream:61:18: note:   ‘std::cout’
+   extern ostream cout;  /// Linked to standard output
+                  ^
+make: *** [class.o] Error 1
+23:53:44 **** Incremental Build of configuration Debug for project basic_cpp ****
+make all 
+Building file: ../class.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"class.d" -MT"class.d" -o "class.o" "../class.cpp"
+../class.cpp:17:12: error: ISO C++ forbids declaration of ‘area’ with no type [-fpermissive]
+ Box:: area(){
+            ^
+subdir.mk:18: recipe for target 'class.o' failed
+make: *** [class.o] Error 1
+23:54:42 **** Incremental Build of configuration Debug for project basic_cpp ****
+make all 
+Building file: ../class.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"class.d" -MT"class.d" -o "class.o" "../class.cpp"
+Finished building: ../class.cpp
+ 
+Building target: basic_cpp
+Invoking: Cross G++ Linker
+g++  -o "basic_cpp"  ./class.o   
+Finished building target: basic_cpp
+ 
+23:57:05 **** Incremental Build of configuration Debug for project basic_cpp ****
+make all 
+make: Nothing to be done for 'all'.
+22:01:57 **** Incremental Build of configuration Debug for project basic_cpp ****
+make all 
+Building file: ../class.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"class.d" -MT"class.d" -o "class.o" "../class.cpp"
+Finished building: ../class.cpp
+ 
+Building target: basic_cpp
+Invoking: Cross G++ Linker
+g++  -o "basic_cpp"  ./class.o   
+Finished building target: basic_cpp
+ 
+23:12:51 **** Incremental Build of configuration Debug for project basic_cpp ****
+make all 
+make: Nothing to be done for 'all'.
+00:22:58 **** Incremental Build of configuration Debug for project basic_cpp ****
+make all 
+Building file: ../graph.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"graph.d" -MT"graph.d" -o "graph.o" "../graph.cpp"
+../graph.cpp: In function ‘int main()’:
+../graph.cpp:19:8: error: ‘Edge* Graph::edge’ is private
+subdir.mk:21: recipe for target 'graph.o' failed
+  Edge *edge;
+        ^
+../graph.cpp:40:5: error: within this context
+  g->edge[0].src = 0;
+     ^
+../graph.cpp:19:8: error: ‘Edge* Graph::edge’ is private
+  Edge *edge;
+        ^
+../graph.cpp:41:5: error: within this context
+  g->edge[0].dst = 1;
+     ^
+../graph.cpp:19:8: error: ‘Edge* Graph::edge’ is private
+  Edge *edge;
+        ^
+../graph.cpp:42:5: error: within this context
+  g->edge[1].src = 1;
+     ^
+../graph.cpp:19:8: error: ‘Edge* Graph::edge’ is private
+  Edge *edge;
+        ^
+../graph.cpp:43:5: error: within this context
+  g->edge[1].dst = 2;
+     ^
+../graph.cpp:19:8: error: ‘Edge* Graph::edge’ is private
+  Edge *edge;
+        ^
+../graph.cpp:44:5: error: within this context
+  g->edge[2].src = 2;
+     ^
+../graph.cpp:19:8: error: ‘Edge* Graph::edge’ is private
+  Edge *edge;
+        ^
+../graph.cpp:45:5: error: within this context
+  g->edge[2].dst = 0;
+     ^
+make: *** [graph.o] Error 1
+00:23:51 **** Incremental Build of configuration Debug for project basic_cpp ****
+make all 
+Building file: ../graph.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"graph.d" -MT"graph.d" -o "graph.o" "../graph.cpp"
+Finished building: ../graph.cpp
+ 
+Building target: basic_cpp
+Invoking: Cross G++ Linker
+g++  -o "basic_cpp"  ./class.o ./graph.o   
+./graph.o: In function `main':
+/home/sandeep/code/interview_codes/basic_cpp/Debug/../graph.cpp:39: multiple definition of `main'
+makefile:44: recipe for target 'basic_cpp' failed
+./class.o:/home/sandeep/code/interview_codes/basic_cpp/Debug/../class.cpp:22: first defined here
+collect2: error: ld returned 1 exit status
+make: *** [basic_cpp] Error 1
+00:24:36 **** Incremental Build of configuration Debug for project basic_cpp ****
+make all 
+Building file: ../class.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"class.d" -MT"class.d" -o "class.o" "../class.cpp"
+Finished building: ../class.cpp
+ 
+Building target: basic_cpp
+Invoking: Cross G++ Linker
+g++  -o "basic_cpp"  ./class.o ./graph.o   
+Finished building target: basic_cpp
+ 
+00:35:01 **** Incremental Build of configuration Debug for project basic_cpp ****
+make all 
+Building file: ../graph.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"graph.d" -MT"graph.d" -o "graph.o" "../graph.cpp"
+Finished building: ../graph.cpp
+ 
+Building target: basic_cpp
+Invoking: Cross G++ Linker
+g++  -o "basic_cpp"  ./class.o ./graph.o   
+Finished building target: basic_cpp
+ 
+00:36:41 **** Incremental Build of configuration Debug for project basic_cpp ****
+make all 
+Building file: ../graph.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"graph.d" -MT"graph.d" -o "graph.o" "../graph.cpp"
+Finished building: ../graph.cpp
+ 
+Building target: basic_cpp
+Invoking: Cross G++ Linker
+g++  -o "basic_cpp"  ./class.o ./graph.o   
+Finished building target: basic_cpp
+ 
+00:37:16 **** Incremental Build of configuration Debug for project basic_cpp ****
+make all 
+Building file: ../graph.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"graph.d" -MT"graph.d" -o "graph.o" "../graph.cpp"
+Finished building: ../graph.cpp
+ 
+Building target: basic_cpp
+Invoking: Cross G++ Linker
+g++  -o "basic_cpp"  ./class.o ./graph.o   
+Finished building target: basic_cpp
+ 
+00:38:09 **** Incremental Build of configuration Debug for project basic_cpp ****
+make all 
+Building file: ../graph.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"graph.d" -MT"graph.d" -o "graph.o" "../graph.cpp"
+../graph.cpp: In member function ‘void Graph::addEdge(int, int)’:
+../graph.cpp:12:6: error: ‘int Edge::src’ is private
+  int src;
+      ^
+../graph.cpp:35:10: error: within this context
+  edge[i].src = src;
+          ^
+../graph.cpp:13:6: error: ‘int Edge::dst’ is private
+  int dst;
+      ^
+../graph.cpp:36:10: error: within this context
+  edge[i].dst = dst;
+          ^
+../graph.cpp: In member function ‘void Graph::printEdges()’:
+../graph.cpp:12:6: error: ‘int Edge::src’ is private
+  int src;
+      ^
+../graph.cpp:42:31: error: within this context
+  std::cout<<"Edge0:"<<edge[0].src <<", "<<edge[0].dst<<std::endl;
+                               ^
+../graph.cpp:13:6: error: ‘int Edge::dst’ is private
+  int dst;
+      ^
+../graph.cpp:42:51: error: within this context
+  std::cout<<"Edge0:"<<edge[0].src <<", "<<edge[0].dst<<std::endl;
+                                                   ^
+../graph.cpp:12:6: error: ‘int Edge::src’ is private
+  int src;
+      ^
+../graph.cpp:43:31: error: within this context
+  std::cout<<"Edge1:"<<edge[1].src <<", "<<edge[1].dst<<std::endl;
+                               ^
+../graph.cpp:13:6: error: ‘int Edge::dst’ is private
+  int dst;
+      ^
+../graph.cpp:43:51: error: within this context
+  std::cout<<"Edge1:"<<edge[1].src <<", "<<edge[1].dst<<std::endl;
+                                                   ^
+../graph.cpp:12:6: error: ‘int Edge::src’ is private
+  int src;
+      ^
+../graph.cpp:44:31: error: within this context
+subdir.mk:21: recipe for target 'graph.o' failed
+  std::cout<<"Edge2:"<<edge[2].src <<", "<<edge[2].dst<<std::endl;
+                               ^
+../graph.cpp:13:6: error: ‘int Edge::dst’ is private
+  int dst;
+      ^
+../graph.cpp:44:51: error: within this context
+  std::cout<<"Edge2:"<<edge[2].src <<", "<<edge[2].dst<<std::endl;
+                                                   ^
+make: *** [graph.o] Error 1
+00:48:15 **** Incremental Build of configuration Debug for project basic_cpp ****
+make all 
+Building file: ../graph.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"graph.d" -MT"graph.d" -o "graph.o" "../graph.cpp"
+Finished building: ../graph.cpp
+ 
+Building target: basic_cpp
+Invoking: Cross G++ Linker
+g++  -o "basic_cpp"  ./class.o ./graph.o   
+Finished building target: basic_cpp
+ 
+00:48:32 **** Incremental Build of configuration Debug for project basic_cpp ****
+make all 
+Building file: ../graph.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"graph.d" -MT"graph.d" -o "graph.o" "../graph.cpp"
+Finished building: ../graph.cpp
+ 
+Building target: basic_cpp
+Invoking: Cross G++ Linker
+g++  -o "basic_cpp"  ./class.o ./graph.o   
+Finished building target: basic_cpp
+ 
+00:51:12 **** Incremental Build of configuration Debug for project basic_cpp ****
+make all 
+Building file: ../graph.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"graph.d" -MT"graph.d" -o "graph.o" "../graph.cpp"
+../graph.cpp: In function ‘int main()’:
+../graph.cpp:56:14: warning: variable ‘e’ set but not used [-Wunused-but-set-variable]
+  struct Edge e;
+              ^
+Finished building: ../graph.cpp
+ 
+Building target: basic_cpp
+Invoking: Cross G++ Linker
+g++  -o "basic_cpp"  ./class.o ./graph.o   
+Finished building target: basic_cpp
+ 
+00:51:35 **** Incremental Build of configuration Debug for project basic_cpp ****
+make all 
+Building file: ../graph.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"graph.d" -MT"graph.d" -o "graph.o" "../graph.cpp"
+../graph.cpp: In function ‘int main()’:
+../graph.cpp:56:14: warning: variable ‘e’ set but not used [-Wunused-but-set-variable]
+  struct Edge e;
+              ^
+Finished building: ../graph.cpp
+ 
+Building target: basic_cpp
+Invoking: Cross G++ Linker
+g++  -o "basic_cpp"  ./class.o ./graph.o   
+Finished building target: basic_cpp
+ 
+00:51:49 **** Incremental Build of configuration Debug for project basic_cpp ****
+make all 
+make: Nothing to be done for 'all'.
+00:52:54 **** Incremental Build of configuration Debug for project basic_cpp ****
+make all 
+Building file: ../graph.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"graph.d" -MT"graph.d" -o "graph.o" "../graph.cpp"
+Finished building: ../graph.cpp
+ 
+Building target: basic_cpp
+Invoking: Cross G++ Linker
+g++  -o "basic_cpp"  ./class.o ./graph.o   
+Finished building target: basic_cpp
+ 
+00:53:47 **** Incremental Build of configuration Debug for project basic_cpp ****
+make all 
+Building file: ../graph.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"graph.d" -MT"graph.d" -o "graph.o" "../graph.cpp"
+Finished building: ../graph.cpp
+ 
+Building target: basic_cpp
+Invoking: Cross G++ Linker
+g++  -o "basic_cpp"  ./class.o ./graph.o   
+Finished building target: basic_cpp
+ 

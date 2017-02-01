@@ -1,0 +1,32 @@
+/*
+ * class.cpp
+ *
+ *  Created on: 30-Jan-2017
+ *      Author: sandeep
+ */
+
+#include<iostream>
+
+using namaspace std;
+
+class Box{
+
+public: int height;
+		int width;
+		int area();
+};
+
+Box::int area(){
+
+	return height*width;
+}
+
+int main(){
+
+	Box b1;
+	b1.height = 20;
+	b1.width = 10;
+	cout<< "Area>>> "<< b1.area();
+}
+
+

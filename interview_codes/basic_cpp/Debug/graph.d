@@ -1,0 +1,1 @@
+graph.d: ../graph.cpp
